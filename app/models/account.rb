@@ -19,7 +19,6 @@
 class Account < ApplicationRecord
   has_ancestry
   has_one :person, dependent: :destroy
-  accepts_nested_attributes_for :person
 
   enum account_status: %i[active blocked canceled]
   enum account_type: %i[matrix branch]
