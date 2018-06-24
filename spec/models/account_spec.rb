@@ -33,4 +33,5 @@ RSpec.describe Account, type: :model do
   it { should validate_presence_of(:account_type) }
   it { should validate_presence_of(:balance) }
   it { should validate_presence_of(:name) }
+  it { should have_one(:person).dependent(:destroy) }
 end

@@ -26,4 +26,7 @@
 
 class Person < ApplicationRecord
   belongs_to :account
+
+  scope :corporations, -> { where(type: 'Corporation') }
+  scope :individuals, -> { where(type: 'Individual') }
 end
