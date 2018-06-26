@@ -35,7 +35,8 @@ module Hubfintech
     config.generators do |g|
       g.test_framework :rspec,
         helper_specs: false,
-        routing_specs: false
+        routing_specs: false,
+        controller_specs: false
     end
   end
 end
