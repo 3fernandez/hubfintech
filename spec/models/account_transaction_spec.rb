@@ -13,8 +13,9 @@
 #
 # Indexes
 #
-#  index_account_transactions_on_from_id  (from_id)
-#  index_account_transactions_on_to_id    (to_id)
+#  index_account_transactions_on_from_id           (from_id)
+#  index_account_transactions_on_to_id             (to_id)
+#  index_account_transactions_on_transaction_code  (transaction_code) UNIQUE
 #
 
 require 'rails_helper'
